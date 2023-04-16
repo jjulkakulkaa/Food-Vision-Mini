@@ -2,6 +2,8 @@ import torch
 from torch import nn
 from tqdm import tqdm
 
+# TinyVGG MODEL REPLICATED FROM https://poloclub.github.io/cnn-explainer/ 
+
 class TinyVGG(nn.Module):
     def __init__(self,
                input_shape: int,

@@ -3,6 +3,8 @@ import torch
 import data_setup , engine, model_builder, utils
 from torchvision import transforms
 
+# MAIN FILE TO RUN TRAINING TINYVGG MODEL
+
 # hyperparameters
 NUM_EPOCHS = 5
 BATCH_SIZE = 32
@@ -14,6 +16,7 @@ NUM_WORKERS = 0
 train_dir = "data/pizza_steak_sushi/train"
 test_dir = "data/pizza_steak_sushi/test"
 
+# set device
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 #transforms

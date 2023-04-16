@@ -2,6 +2,8 @@ import os
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
+# FUNCTION MADE TO TURN DATA TO DATALOADERS
+
 def create_dataloaders(train_dir: str,
                        test_dir: str,
                        transform: transforms.Compose,

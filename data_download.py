@@ -4,6 +4,8 @@ import requests
 import zipfile
 from pathlib import Path
 
+# DOWNLOADING DATA FROM MDRBROUKE PYTORCH DEEP LEARNING COURSE
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 data_path = Path("data/")

@@ -2,6 +2,7 @@ import torch
 from torch import nn
 from tqdm import tqdm
 
+# TEST, TRAINING STEP DEFINED AND ALL TRAINING IN FUNCTION
 
 def train_step(model: torch.nn.Module,
                dataloader: torch.utils.data.DataLoader,
