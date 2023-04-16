@@ -26,3 +26,8 @@ else:
 with zipfile.ZipFile(data_path /"pizza_steak_sushi.zip", "r") as zip_ref:
     zip_ref.extractall(image_path)
 
+os.remove(data_path / "pizza_steak_sushi.zip")
+
+train_dir = image_path / "train"
+test_dir = image_path / "test"
+
