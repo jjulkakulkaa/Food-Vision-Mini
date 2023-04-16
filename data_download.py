@@ -1,11 +1,8 @@
 import os
 import torch
-import  utils
 import requests
 import zipfile
 from pathlib import Path
-from torchvision import transforms, datasets
-from torch.utils.data import DataLoader
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -28,6 +25,5 @@ with zipfile.ZipFile(data_path /"pizza_steak_sushi.zip", "r") as zip_ref:
 
 os.remove(data_path / "pizza_steak_sushi.zip")
 
-train_dir = image_path / "train"
-test_dir = image_path / "test"
+
 
